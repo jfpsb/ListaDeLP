@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1456429409 source:g:\dropbox\lp\q3\main.c
+	<stdio.h>
+	<stdlib.h>
+	"qlib.h"
+
+1456417493 g:\dropbox\lp\qlib\qlib.h
+
