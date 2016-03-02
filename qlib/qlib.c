@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <windows.h>
 #include "qlib.h"
 
 //Cria lista
@@ -21,7 +22,7 @@ node *criar(int vlr)
     return NULL;
 }
 
-//Adiciona elementos a lista
+//Adiciona elementos 'a lista
 void addNum(node **lista, int vlr)
 {
     node *temp = *lista;
@@ -55,8 +56,9 @@ void freeLista(node **lista)
             temp = temp->next;
             free(aux);
         }
-
     }
+
+    *lista = NULL;
 }
 
 void printLista(node *temp)
